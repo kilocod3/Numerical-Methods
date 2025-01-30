@@ -57,7 +57,6 @@ for h in h_values: #Ошибки
     U_rk4 = runge_kutta_4(h, m, g)
     
     exact_values = [exact_solution(X, m, g) for X in x_values] # Точное решение
-    
     errors_euler = calculate_error(U_euler, exact_values) # Вычисление ошибок
     errors_rk2 = calculate_error(U_rk2, exact_values)
     errors_rk4 = calculate_error(U_rk4, exact_values)
